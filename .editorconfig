@@ -1,0 +1,15 @@
+root = true
+
+[*]
+charset = utf-8                   ; Az összes fájl karakterkódolása UTF-8 legyen
+end_of_line = lf                  ; Sorvége jele legyen LF (Unix-stílus)
+insert_final_newline = true       ; Az utolsó sor végén legyen egy üres sor
+indent_style = space              ; Behúzás típusa: szóközök
+indent_size = 2                   ; Behúzás mérete: 2 szóköz
+trim_trailing_whitespace = true   ; Felesleges szóközök törlése a sorvégekről
+
+[*.php]
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false  ; Markdown fájlokban ne törölje a sorvégi szóközöket
