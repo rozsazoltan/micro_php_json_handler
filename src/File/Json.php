@@ -44,7 +44,8 @@ class Json
     /**
      * $content Valid JSON-t tartalmaz-e
      */
-    private function isValid (string $content) {
+    private function isValid (string $content): bool
+    {
         return json_validate($content); // Warning: PHP 8.3 funkció, kisebb PHP-n is futtatható, amennyiben ezt elhagyjuk!
     }
 }
